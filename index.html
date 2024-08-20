@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Alura | Encriptador</title>
+  </head>
+  <body class="layout">
+    <div class="layout-input">
+      <input
+        type="text"
+        id="text"
+        class="input-text"
+        placeholder="Ingrese el texto aqui"
+      />
+      <div class="btn-input">
+        <p>Solo letras minusculas y sin acentos</p>
+        <button type="button" id="encriptar" class="btn btn-encriptar">
+          Encriptar
+        </button>
+        <button type="button" id="desencriptar" class="btn btn-desencriptar">
+          Desencriptar
+        </button>
+      </div>
+    </div>
+    <div class="layout-result">
+      <div id="msg-none" class="msg">
+        <img src="./public/sky-dev-team-working-on-a-project.png" alt="dev" />
+        <p class="word">Ningun mensaje fue encontrado</p>
+        <p>Ingrese el texto que desees encriptar o desencriptar</p>
+      </div>
+
+      <p id="result" class="text"></p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

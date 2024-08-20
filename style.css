@@ -1,0 +1,86 @@
+:root {
+  --primary: #1a5ad9;
+  --secondary: #4a79d9;
+  --third: #88abf2;
+  --off: #acc3f2;
+  --white: #ffff;
+  --padding: 5rem;
+}
+button,
+input {
+  all: unset;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.off {
+  color: var(--off);
+}
+
+.btn {
+  width: 10rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+.btn-encriptar {
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+}
+.btn-desencriptar {
+  background-color: var(--off);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.layout {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.layout-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--padding);
+  width: 60%;
+}
+
+.layout-result {
+  display: flex;
+  height: 100vh;
+  width: 40%;
+}
+
+.input-text {
+  height: 20rem;
+  display: flex;
+}
+
+.input-text::placeholder {
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+.msg {
+  width: 100%;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
