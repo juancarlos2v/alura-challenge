@@ -1,14 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 :root {
   --primary: #1a5ad9;
   --secondary: #4a79d9;
   --third: #88abf2;
   --off: #acc3f2;
+  --back: #acc3f22d;
   --white: #ffff;
   --padding: 5rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--back);
 }
 button,
 input {
   all: unset;
+}
+p {
+  margin: 0;
+}
+h1 {
+  color: var(--primary);
 }
 
 .primary {
@@ -23,27 +39,38 @@ input {
   color: var(--off);
 }
 
+.adv {
+  color: var(--third);
+}
 .btn {
   width: 10rem;
+  border: solid 1px transparent;
   border-radius: 2rem;
   padding: 1rem;
   text-align: center;
+  margin-top: 1rem;
 }
 .btn-encriptar {
   background-color: var(--primary);
   color: var(--white);
   cursor: pointer;
 }
+
 .btn-desencriptar {
   background-color: var(--off);
   color: var(--primary);
   cursor: pointer;
 }
+.btn-desencriptar:hover,
+.btn-encriptar:hover {
+  border: solid 1px var(--primary);
+  background-color: var(--white);
+  color: var(--primary);
+}
 
 .layout {
   display: flex;
   width: 100%;
-  height: 100vh;
 }
 
 .layout-input {
@@ -56,13 +83,14 @@ input {
 
 .layout-result {
   display: flex;
-  height: 100vh;
-  width: 40%;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .input-text {
   height: 20rem;
   display: flex;
+  font-size: 1.5rem;
 }
 
 .input-text::placeholder {
@@ -76,11 +104,25 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--white);
+  border-radius: 3rem;
+}
+.word {
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .text {
-  width: 40%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
+  padding: 3rem;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: var(--secondary);
 }

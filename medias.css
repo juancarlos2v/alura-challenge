@@ -1,0 +1,42 @@
+@media only screen and (max-width: 600px) {
+  /* Estilos para teléfonos móviles */
+  .btn-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Estilos para tabletas en modo vertical */
+@media only screen and (max-width: 900px) {
+  /* Estilos para tabletas */
+  .image {
+    display: none;
+  }
+  .layout {
+    flex-direction: column;
+  }
+  .layout-input {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .layout-result {
+    width: 100%;
+    flex-direction: column;
+  }
+  .layout-input p {
+    text-align: center;
+  }
+  .msg {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  /* Estilos para tabletas en modo horizontal y computadoras pequeñas */
+}
